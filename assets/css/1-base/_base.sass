@@ -1,8 +1,10 @@
 // importing styles
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,700&subset=cyrillic')
-@import url('https://fonts.googleapis.com/css?family=Pacifico')
-@import url('https://fonts.googleapis.com/css?family=Raleway:400,500,600,700')
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,700,800&subset=cyrillic')
+@import url('https://fonts.googleapis.com/css?family=PT+Sans&subset=cyrillic')
 
+=ptsans
+	font-family: 'PT Sans', sans-serif
+	font-weight: 400
 
 *
 	margin: 0
@@ -16,16 +18,15 @@ body
 		size: 14px
 		family: 'Open Sans', sans-serif
 	color: $black
-	background-color: #fafafa
+	background-color: #fff
 	line-height: 1.5em
-	height: 2000px
 
 a 
 	text-decoration: none
-	color: #39cccc
+	color: #6699cc
 	display: inline-block
 	outline: none
-	transition: color 200ms ease-in-out
+	+transition
 	&:hover
 		color: $red
 

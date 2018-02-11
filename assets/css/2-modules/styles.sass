@@ -1,0 +1,220 @@
+.page
+    &-title
+        margin-top: 80px
+        
+        font-size: 36px
+        font-weight: 800
+        text-transform: uppercase
+        letter-spacing: 0.5px
+        margin-bottom: 15px
+    &-subtitle
+        font-size: 20px
+        +ptsans
+        padding: 0 25px
+        line-height: 24px
+        margin-bottom: 90px
+    &-desc
+        font-size: 20px
+        font-style: italic
+
+    &-divider
+        height: 50px
+        width: 100%
+        display: flex
+        margin-top: 50px
+        align-items: center
+        &:before, &:after
+            height: 1px
+            content: ''
+            display: block
+            background: $muted
+            width: 100%
+        img
+            margin: 0 5px
+
+    &-header
+        padding: 50px 0 60px
+
+    &-hero
+        padding-bottom: 150px
+        background:
+            size: cover
+            position: center top
+            repeat: no-repeat
+            image: url(../img/bg.png)
+        &--list
+            +ptsans
+            font-size: 20px
+            list-style-type: none
+            li
+                display: flex
+                align-items: center
+                margin-bottom: 5px
+                position: relative
+                &:before
+                    content: ''
+                    width: 8px
+                    height: 8px
+                    margin-right: 10px
+                    display: inline-block
+                    background: $red
+                    border-radius: 50%
+            &__title
+                font-size: 24px
+                margin-bottom: 15px
+                +ptsans
+
+            
+
+        &--cta
+            margin-top: 40px
+        &--card
+            width: 100%
+            background: #fbfbfb
+            padding: 50px 60px
+            max-width: 390px
+            margin: 0 auto
+            position: relative
+            box-shadow: 8px 0 80px rgba(#282828, 0.2)
+            border-top: 1px solid #e0e0e0
+            border-bottom: 1px solid #e0e0e0
+            &:after
+                content: ''
+                width: 100%
+                height: 100%
+                top: 0
+                left: 0
+                background: linear-gradient(to top, #fff, #adadad 300%)
+                position: absolute
+            &__bg
+                position: relative
+                z-index: 10
+            .page-divider
+                margin: 15px 0 20px
+                img
+                    max-width: 20px
+
+            &__icon
+                position: absolute
+                top: -50px
+                left: 50%
+                z-index: 25
+                transform: translateX(-50%)
+            &__desc
+                font-size: 12px
+                margin-bottom: 0
+                line-height: 1.5
+                font-style: italic
+
+            &__title
+                font-size: 24px
+                font-weight: 800
+                text-transform: uppercase
+                letter-spacing: 1px
+                line-height: 30px
+                margin-bottom: 35px
+
+            &__subtitle
+                +ptsans
+                font-size: 18px
+
+            &__thumb
+                width: 110px
+                height: 110px
+                border-radius: 50%
+                box-shadow: 0 0 30px rgba($black, 0.15)
+                margin: 10px auto
+                background: 
+                    size: cover
+                    position: center center
+                    repeat: no-repeat
+
+            &__person
+                font-size: 12px
+                font-style: italic
+
+    &-cta
+        padding: 20px 35px
+        color: $white
+        max-width: 440px
+        font-size: 18px
+        font-weight: 700
+        text-transform: uppercase
+        letter-spacing: 1px
+        border-radius: 3px
+        text-align: center
+        border: none
+        background: $cta_bg_color
+        &:hover
+            color: $white
+            text-decoration: none
+            background: $cta_bg_hover
+
+    
+
+    &-footer
+        background-image: url(../img/pattern.png)
+        padding: 40px 0
+        text-align: right
+        color: #999999
+        +ptsans
+        font-size: 16px
+
+        &--company
+
+        &--adress
+            margin-bottom: 20px
+        &--link
+            text-decoration: underline
+        &--phone
+            font-size: 18px
+        &--email
+            margin-bottom: 20px
+            font-size: 18px
+            color: #999999
+            text-decoration: none
+
+    &-popup
+        background: rgba($black, 0.4)
+        position: fixed
+        top: 0
+        bottom: 0
+        left: 0
+        right: 0
+        z-index: 30
+        display: none
+        &--form
+            max-width: 400px
+            width: 400px
+            position: absolute
+            top: 50%
+            left: 50%
+            transform: translate(-50%,-50%)
+            box-shadow: 8px 0 80px rgba(#282828, 0.2)
+            padding: 40px 25px
+            border-radius: 3px
+            background: $white
+            margin: 0 auto
+            transition: all 2s ease-in-out
+            text-align: center
+            input
+                width: 100%
+                height: 50px
+                padding-left: 15px
+                margin-bottom: 25px
+                border: 1px solid $muted
+                display: block
+            button
+                padding: 15px 30px
+
+
+.page-hero2
+    .page-header
+        padding: 40px 0 45px
+        .page-divider
+            margin-top: 25px
+        .page-title
+            margin-top: 30px
+        .page-subtitle
+            padding: 0 80px
+            margin-bottom: 0

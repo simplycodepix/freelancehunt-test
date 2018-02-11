@@ -1,28 +1,48 @@
 ---
 layout: default
 title: Starter
-section-title: Отлично! Ты скачал чек-лист
-section-desc: Теперь для того, чтобы совершить прорыв в 2018 году и сделать свой продукт бестселлером, тебе нужен всего один инструмент
+section-title: Готов ли я к продвижению?
+section-subtitle: Этот чек-лист поможет тебе оценить текущее состояние твоего маркетинга, исправить ошбики и совершить настоящтй прорыв в 2018 году.
 page-desc: Для тренеров, коучей, психологов и консультантов
 ---
 
-<header class="page-header">
-    <div class="container">
-        <div class="row justify-content-md-center">
-            <div class="col-md-6 text-center">
-                <div class="page-desc">{{page.page-desc}}</div>
+<section class="page-hero page-hero2">
+    <header class="page-header">
+        <div class="container">
+            <div class="row justify-content-md-center">
+                <div class="col-md-8 text-center">
+                    <div class="page-desc">{{page.page-desc}}</div>
+                    <div class="page-divider"><img src="assets/img/separetor.png" alt=""></div>
+                    <h2 class="page-title">{{page.section-title}}</h2>
+                    <div class="page-subtitle">{{page.section-subtitle}}</div>
+                </div>
             </div>
         </div>
-    </div>
-</header>
-
-<section class="page-hero">
+    </header>
     <div class="container">
-        <div class="row justify-content-md-center">
-            <div class="col-md-6 text-center">
-                <h2 class="page-title">{{page.section-title}}</h2>
-                <div class="page-subtitle">{{page.section-subtitle}}</div>
-                <a href="" class="page-cta page-hero--cta">Я хочу создать инструмент для создания продукта-бестселлера</a>
+        <div class="row justify-content-md-between">
+            <div class="col-md-6 col-sm-12 text-center">
+                <div class="page-hero--card">
+                    <div class="page-hero--card__icon"><img src="assets/img/card-icon.png" alt=""></div>
+                    <div class="page-hero--card__bg">
+                        <div class="page-hero--card__desc">{{page.page-desc}}</div>
+                        <div class="page-divider"><img src="assets/img/separetor.png" alt=""></div>
+                        <div class="page-hero--card__title">{{page.section-title}}</div>
+                        <div class="page-hero--card__subtitle">{{page.section-subtitle}}</div>
+                        <div class="page-hero--card__thumb" style="background-image: url(assets/img/avatar.png)"></div>
+                        <div class="page-hero--card__person">Николай Воробьёв</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-12">
+                <h3 class="page-hero--list__title">Скачайте чек-лист, чтобы:</h3>
+                <ul class="page-hero--list">
+                    <li>Избежать впустую потраченного времени</li>
+                    <li>Сохранить личный и рекламный бюджет от "слива"</li>
+                    <li>Перестать париться по поводу маркетинга</li>
+                    <li>Совершить прорыв в продвижении в 2018 году</li>
+                </ul>
+                <a href="" class="page-cta page-hero--cta page-open--popup">Я хочу скачать чек-лист и совершить прорыв</a>
             </div>
         </div>
     </div>

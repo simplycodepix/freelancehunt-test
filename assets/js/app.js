@@ -1,18 +1,18 @@
 $(document).ready(function(){
 
-	/* FEAROURED CAROUSEL */
-	/***********************/
-	$(".rj_featured_items").slick({
-   autoplay: true,
-   arrows: true,
-   prevArrow: '<div class="prev_arrow slide_arrow"><i class="fa fa-angle-left" aria-hidden="true"></i></div>',
-   nextArrow: '<div class="next_arrow slide_arrow"><i class="fa fa-angle-right" aria-hidden="true"></i></div>'
- });
+	$('.page-popup--form').on('click', function(e){
+		e.stopPropagation();
+	});
+		
+	$('.page-popup, .page-open--popup').on("click", function (e) {
+		e.preventDefault();
+		$('.page-popup').toggle();
+	});
 
-	$('.rj_article__thumb').zoom({
-		target: false,
-		onZoomIn: true,
-		onZoomOut: true,
+
+	$('#popup').submit(function(e) {
+		e.preventDefault();
+		$(location).attr('href', 'http://localhost:3000/index-ok.html');
 	});
 
 });

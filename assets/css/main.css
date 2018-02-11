@@ -5,9 +5,8 @@
  * 2. Prevent iOS text size adjust after orientation change, without disabling
  *    user zoom.
  */
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,700&subset=cyrillic");
-@import url("https://fonts.googleapis.com/css?family=Pacifico");
-@import url("https://fonts.googleapis.com/css?family=Raleway:400,500,600,700");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,700,800&subset=cyrillic");
+@import url("https://fonts.googleapis.com/css?family=PT+Sans&subset=cyrillic");
 html {
   font-family: sans-serif;
   /* 1 */
@@ -667,19 +666,18 @@ html, body {
 body {
   font-size: 14px;
   font-family: 'Open Sans', sans-serif;
-  color: #111111;
-  background-color: #fafafa;
-  line-height: 1.5em;
-  height: 2000px; }
+  color: #333333;
+  background-color: #fff;
+  line-height: 1.5em; }
 
 a {
   text-decoration: none;
-  color: #39cccc;
+  color: #6699cc;
   display: inline-block;
   outline: none;
-  transition: color 200ms ease-in-out; }
+  transition: all 0.15s ease-out 0s; }
   a:hover {
-    color: #FF4136; }
+    color: #ff0000; }
 
 img {
   max-width: 100%;
@@ -688,3 +686,216 @@ img {
 
 .space {
   height: 500px; }
+
+.page-title {
+  margin-top: 80px;
+  font-size: 36px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 15px; }
+
+.page-subtitle {
+  font-size: 20px;
+  font-family: 'PT Sans', sans-serif;
+  font-weight: 400;
+  padding: 0 25px;
+  line-height: 24px;
+  margin-bottom: 90px; }
+
+.page-desc {
+  font-size: 20px;
+  font-style: italic; }
+
+.page-divider {
+  height: 50px;
+  width: 100%;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 50px;
+  -ms-flex-align: center;
+      align-items: center; }
+  .page-divider:before, .page-divider:after {
+    height: 1px;
+    content: '';
+    display: block;
+    background: #c5cbcd;
+    width: 100%; }
+  .page-divider img {
+    margin: 0 5px; }
+
+.page-header {
+  padding: 50px 0 60px; }
+
+.page-hero {
+  padding-bottom: 150px;
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-image: url(../img/bg.png); }
+  .page-hero--list {
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    list-style-type: none; }
+    .page-hero--list li {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-align: center;
+          align-items: center;
+      margin-bottom: 5px;
+      position: relative; }
+      .page-hero--list li:before {
+        content: '';
+        width: 8px;
+        height: 8px;
+        margin-right: 10px;
+        display: inline-block;
+        background: #ff0000;
+        border-radius: 50%; }
+    .page-hero--list__title {
+      font-size: 24px;
+      margin-bottom: 15px;
+      font-family: 'PT Sans', sans-serif;
+      font-weight: 400; }
+  .page-hero--cta {
+    margin-top: 40px; }
+  .page-hero--card {
+    width: 100%;
+    background: #fbfbfb;
+    padding: 50px 60px;
+    max-width: 390px;
+    margin: 0 auto;
+    position: relative;
+    box-shadow: 8px 0 80px rgba(40, 40, 40, 0.2);
+    border-top: 1px solid #e0e0e0;
+    border-bottom: 1px solid #e0e0e0; }
+    .page-hero--card:after {
+      content: '';
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      background: linear-gradient(to top, #fff, #adadad 300%);
+      position: absolute; }
+    .page-hero--card__bg {
+      position: relative;
+      z-index: 10; }
+    .page-hero--card .page-divider {
+      margin: 15px 0 20px; }
+      .page-hero--card .page-divider img {
+        max-width: 20px; }
+    .page-hero--card__icon {
+      position: absolute;
+      top: -50px;
+      left: 50%;
+      z-index: 25;
+      transform: translateX(-50%); }
+    .page-hero--card__desc {
+      font-size: 12px;
+      margin-bottom: 0;
+      line-height: 1.5;
+      font-style: italic; }
+    .page-hero--card__title {
+      font-size: 24px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      line-height: 30px;
+      margin-bottom: 35px; }
+    .page-hero--card__subtitle {
+      font-family: 'PT Sans', sans-serif;
+      font-weight: 400;
+      font-size: 18px; }
+    .page-hero--card__thumb {
+      width: 110px;
+      height: 110px;
+      border-radius: 50%;
+      box-shadow: 0 0 30px rgba(51, 51, 51, 0.15);
+      margin: 10px auto;
+      background-size: cover;
+      background-position: center center;
+      background-repeat: no-repeat; }
+    .page-hero--card__person {
+      font-size: 12px;
+      font-style: italic; }
+
+.page-cta {
+  padding: 20px 35px;
+  color: #fff;
+  max-width: 440px;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-radius: 3px;
+  text-align: center;
+  border: none;
+  background: #cc0000; }
+  .page-cta:hover {
+    color: #fff;
+    text-decoration: none;
+    background: #ff0000; }
+
+.page-footer {
+  background-image: url(../img/pattern.png);
+  padding: 40px 0;
+  text-align: right;
+  color: #999999;
+  font-family: 'PT Sans', sans-serif;
+  font-weight: 400;
+  font-size: 16px; }
+  .page-footer--adress {
+    margin-bottom: 20px; }
+  .page-footer--link {
+    text-decoration: underline; }
+  .page-footer--phone {
+    font-size: 18px; }
+  .page-footer--email {
+    margin-bottom: 20px;
+    font-size: 18px;
+    color: #999999;
+    text-decoration: none; }
+
+.page-popup {
+  background: rgba(51, 51, 51, 0.4);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 30;
+  display: none; }
+  .page-popup--form {
+    max-width: 400px;
+    width: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 8px 0 80px rgba(40, 40, 40, 0.2);
+    padding: 40px 25px;
+    border-radius: 3px;
+    background: #fff;
+    margin: 0 auto;
+    transition: all 2s ease-in-out;
+    text-align: center; }
+    .page-popup--form input {
+      width: 100%;
+      height: 50px;
+      padding-left: 15px;
+      margin-bottom: 25px;
+      border: 1px solid #c5cbcd;
+      display: block; }
+    .page-popup--form button {
+      padding: 15px 30px; }
+
+.page-hero2 .page-header {
+  padding: 40px 0 45px; }
+  .page-hero2 .page-header .page-divider {
+    margin-top: 25px; }
+  .page-hero2 .page-header .page-title {
+    margin-top: 30px; }
+  .page-hero2 .page-header .page-subtitle {
+    padding: 0 80px;
+    margin-bottom: 0; }

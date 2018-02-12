@@ -12,7 +12,9 @@ $(document).ready(function(){
 
 	$('#popup').submit(function(e) {
 		e.preventDefault();
-		$(location).attr('href', 'http://localhost:3000/index-ok.html');
+		$(location).attr('href', location.host + 'index-ok.html');
 	});
+
+	console.log(location);
 
 });
